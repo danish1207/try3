@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        font-family: Comic Sans MS, cursive, sans-serif;
+        /* background-image: url("https://www.investopedia.com/thmb/myCqCtkZlTwYkFu0e4plqazVM4s=/1500x844/smart/filters:no_upscale()/GettyImages-1054017850-0c7ca7d8368c4ab681a3d9c0fd2892e8.jpg"); fallback for old browsers */
+        /* background-size: contain;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.4); */
+        /* filter: blur(8px);
+       -webkit-filter: blur(8px); */
+
+      }
+      img {
+        width: 95%;
+        height: 95%;
+        margin: 10%;
+      }
+      .row {
+        position: relative;
+        top: 100px;
+      }
+
+      .flip-box {
+        background-color: transparent;
+        width: 100%;
+        height: 400px;
+        perspective: 1000px;
+        padding: 1px;
+        margin-bottom: 70px;
+        margin-top: 50px;
+      }
+
+      .flip-box-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      .flip-box:hover .flip-box-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-box-front,
+      .flip-box-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-box-front {
+        background-color: #fff;
+        color: black;
+        border-radius: 20%;
+      }
+
+      .flip-box-back {
+        background-color: dodgerblue;
+        transform: rotateY(180deg);
+        border-radius: 20%;
+      }
+      .card {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        border-radius: 10%;
+        box-shadow: 7px 7px black;
+      }
+      .Aastikbtn {
+        width: 80%;
+        height: 100px;
+      }
+      .card img {
+        width: 60%;
+        height: 50%;
+      }
+      .page-bg {
+  background: url('https://www.investopedia.com/thmb/myCqCtkZlTwYkFu0e4plqazVM4s=/1500x844/smart/filters:no_upscale()/GettyImages-1054017850-0c7ca7d8368c4ab681a3d9c0fd2892e8.jpg');
+  background-size: contain;
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+    </style>
+    <link rel="stylesheet" href="sponcers.css" />
+  </head>
+  <body>
+      <div class="page-bg"></div>
+    <div class="container" style="width:100%">
+      <!-- <img src="images/1.png" alt="Festive Fiesta " width="100px",height="100px"> -->
+      <div class="row align-items-center justify-content-between">
+        <div class="col-10 col-md-4 offset-md-0 offset-1">
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <div class="card">
+                  <img src="images/icons/logo gym.png" style="width:250px" />
+                  <br>
+                  <h2>Fitness Partner</h2>
+                  <!-- <p> Short description of the Event to be added here</p> -->
+                </div>
+              </div>
+              <div class="flip-box-back">
+                <div class="card">
+                  <h2
+                    style="
+                      margin-bottom: 50px;
+                      font-weight: bold;
+                      font-family: Comic Sans MS, cursive, sans-serif;
+                    "
+                  > <br> <br> <br>
+                  Fitness Partner
+                  </h2>
+                  <!-- <p>description of the Event to be added here</p> -->
+                  <a class="Aastikbtn" href="https://lifelinefitnessgym.in/"
+                    ><p style="color: black">Website link</p></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-4 offset-md-0 offset-1">
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <div class="card">
+                  <img src="images/icons/20200909_192126_0000.png" />
+                  <br>
+                  <h2>Title Sponsor</h2>
+                  <!-- <p> Short description of the Event to be added here</p> -->
+                </div>
+              </div>
+              <div class="flip-box-back">
+                <div class="card">
+                  <h2
+                    style="
+                      margin-bottom: 50px;
+                      font-weight: bold;
+                      font-family: Comic Sans MS, cursive, sans-serif;
+                    "
+                  > <br> <br> <br>
+                  Title Sponsor
+                  </h2>
+                  <!-- <p>// description of the Event to be added here</p> -->
+                  <a class="Aastikbtn" href="https://tezshreevista.com/"
+                    ><p style="color: black">Webiste Link</p></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-4 offset-md-0 offset-1">
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <div class="card">
+                  <img src="images/icons/20181228121806-thesouledstore-logo.png" />
+                  <br>
+                  <h2>Gifting Partner</h2>
+                  <!-- <p>//Short description of the event to be added here</p> -->
+                </div>
+              </div>
+              <div class="flip-box-back">
+                <div class="card">
+                  <h2
+                    style="
+                      margin-bottom: 50px;
+                      font-weight: bold;
+                      font-family: Comic Sans MS, cursive, sans-serif;
+                    "
+                  > <br> <br> <br>
+                  Gifting Partner
+                  </h2>
+                  <!-- <p>// description of the Event to be added here</p> -->
+                  <a class="Aastikbtn"  href="https://www.thesouledstore.com/"
+                    ><p style="color: black">Webiste Link</p></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
